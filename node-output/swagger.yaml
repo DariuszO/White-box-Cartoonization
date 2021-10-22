@@ -1,0 +1,28 @@
+---
+swagger: "2.0"
+info:
+  description: |
+    Convert images and videos into a cartoon style
+    ---
+      How to use:
+      * Select a file Type
+      * upload a file
+      * Execute and wait little time
+  version: "0.1"
+  title: ainize-catoonize-swagger
+  contact:
+    name: Ainizer - Sangil Park
+  license:
+    name: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+    url: https://github.com/DariuszO/White-box-Cartoonization#license
+paths:
+  /predict:
+    post:
+      parameters: []
+      responses:
+        "200":
+          description: success
+        "400":
+          description: Bad Request
+        "500":
+          description: Server side error
